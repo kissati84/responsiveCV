@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!--=============== BOXICONS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="./assets/styles.css" />
+
+    <title>Responsive CV</title>
+  </head>
+  <body>
+    <!--=============== HEADER ===============-->
+    <header class="l-header" id="header">
+      <nav class="nav bd-container">
+        <a href="#" class="nav-logo">Kiss Attila István</a>
+
+        <div class="nav-menu" id="nav-menu">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#home" class="nav-link active-link">
+                <i class="bx bx-home nav-icon"></i>Főoldal
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#profile" class="nav-link">
+                <i class="bx bx-user nav-icon"></i>Magamról
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#education" class="nav-link">
+                <i class="bx bx-book nav-icon"></i>Tanulmányok
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#skills" class="nav-link">
+                <i class="bx bx-receipt nav-icon"></i>Készségek
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#experience" class="nav-link">
+                <i class="bx bx-briefcase-alt nav-icon"></i>Munkatapasztalat
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#certificates" class="nav-link">
+                <i class="bx bx-award nav-icon"></i>Szakmai tevékenység
+              </a>
+            </li>
+
+            <!-- <li class="nav-item">
+              <a href="#references" class="nav-link">
+                <i class="bx bx-link-external nav-icon"></i>References
+              </a>
+            </li> -->
+          </ul>
+        </div>
+
+        <div class="nav-toggle" id="nav-toggle">
+          <i class="bx bx-grid-alt"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main class="l-main bd-container">
+      <!-- All elements within this div, is generated in PDF -->
+      <div class="resume" id="area-cv">
+        <div class="resume-left">
+          <!--=============== HOME ===============-->
+          <section class="home" id="home">
+            <div class="home-container section bd-grid">
+              <div class="home-data bd-grid">
+                <img
+                  src="./assets/img/profile-img.png"
+                  alt="home image"
+                  class="home-img"
+                />
+                <h1 class="home-title">KISS <b>ATTILA ISTVÁN</b></h1>
+                <h3 class="home-profession">Informatikus könyvtáros</h3>
+
+                <!-- Button to download your CV saved in the pdf folder. Available for mobil -->
+                <div>
+                  <a download="" href="./myResume.pdf" class="home-button-mobil"
+                    >Letöltés</a
+                  >
+                </div>
+              </div>
+
+              <div class="home-adress bd-grid">
+                <span class="home-information">
+                  <i class="bx bx-map home-icon"></i> Budapest
+                </span>
+
+                <span class="home-information">
+                  <i class="bx bx-envelope home-icon"></i> kissati23@gmail.com
+                </span>
+
+                <span class="home-information">
+                  <i class="bx bx-phone home-icon"></i> +36-20-258-1668
+                </span>
+              </div>
+            </div>
+            <!-- Theme change button -->
+            <i
+              class="bx bx-moon change-theme"
+              title="Theme"
+              id="theme-button"
+            ></i>
+
+            <!-- Button to generate and download the pdf. Available for desktop -->
+            <i
+              class="bx bx-download generate-pdf"
+              title="Generate PDF"
+              id="resume-button"
+            ></i>
+          </section>
+
+          <!--=============== SOCIAL ===============-->
+          <!-- <section class="social section">
+            <h2 class="section-title">KÖZÖSSÉGI OLDALAK</h2>
+
+            <div class="social-container bd-grid">
+              <a
+                href="https://www.linkedin.com/in/attila-istv%C3%A1n-kiss-361953206/?locale=hu_HU"
+                target="_blank"
+                class="social-link"
+              >
+                <i class="bx bxl-linkedin-square social-icon"></i>
+                @kissattilaistvan
+              </a>
+
+              <a
+                href="https://www.facebook.com/kiss.attila.istvan"
+                target="_blank"
+                class="social-link"
+              >
+                <i class="bx bxl-facebook social-icon"></i> @kissattilaistvan
+              </a>
+
+              <a
+                href="https://www.instagram.com/kissati84/"
+                target="_blank"
+                class="social-link"
+              >
+                <i class="bx bxl-instagram social-icon"></i> @kissattilaistvan
+              </a>
+            </div>
+          </section> -->
+
+          <!--=============== PROFILE ===============-->
+          <section class="profile section" id="profile">
+            <h2 class="section-title">Magamról</h2>
+
+            <p class="profile-description">
+              Mindig nyitottan és figyelmesen közelítek a világ dolgaihoz,
+              precíz vagyok a munkában, és nagyon lojális az emberekhez.
+              Szeretek tanulni és új emberekkel, szituációkkal, folyamatokkal
+              megismerkedni.
+            </p>
+          </section>
+
+          <!--=============== EDUCATION ===============-->
+          <section class="education section" id="education">
+            <h2 class="section-title">TANULMÁNYOK</h2>
+
+            <div class="education-container bd-grid">
+              <div class="education-content">
+                <div class="education-time">
+                  <span class="education-rounder"></span>
+                  <span class="education-line"></span>
+                </div>
+
+                <div class="education-data bd-grid">
+                  <h3 class="education-title">SZOCIÁLIS MUNKA</h3>
+                  <span class="education-studies"
+                    >Debreceni Egyetem (abszolvált)</span
+                  >
+                  <span class="education-year">2011-2015</span>
+                </div>
+              </div>
+
+              <div class="education-content">
+                <div class="education-time">
+                  <span class="education-rounder"></span>
+                  <!-- <span class="education-line"></span> -->
+                </div>
+
+                <div class="education-data bd-grid">
+                  <h3 class="education-title">
+                    INFORMATIKUS KÖNYVTÁROS - KOMMUNIKÁCIÓ
+                  </h3>
+                  <span class="education-studies"
+                    >Kölcsey Ferenc Református Tanítóképző Főiskola,
+                    Debrecen</span
+                  >
+                  <span class="education-year">2003-2007</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!--=============== OTHER QUALIFICATIONS ===============-->
+          <section class="qualification section" id="qualification">
+            <h2 class="section-title">EGYÉB KÉPESÍTÉSEK</h2>
+
+            <div class="qualification-container bd-grid">
+              <div class="qualification-content">
+                <h3 class="qualification-title">
+                  Programozás alapjai tanfolyam | 2022
+                </h3>
+                <p class="qualification-description">
+                  CodeBerry School Kft. | 40 órás felnőttképzés
+                </p>
+              </div>
+
+              <div class="qualification-content">
+                <h3 class="qualification-title">
+                  Haladó JavaScript-tanfolyam | 2022
+                </h3>
+                <p class="qualification-description">
+                  CodeBerry School Kft. | 20 órás felnőttképzés
+                </p>
+              </div>
+
+              <div class="qualification-content">
+                <h3 class="qualification-title">
+                  Elektronikus tananyagfejlesztés és távoktatás könyvtári
+                  környezetben | 2022
+                </h3>
+                <p class="qualification-description">
+                  Könyvtári Intézet | 60 órás továbbképzés
+                </p>
+              </div>
+
+              <div class="qualification-content">
+                <h3 class="qualification-title">
+                  Projektmenedzsment | 2015
+                </h3>
+                <p class="qualification-description">
+                  TKKI | 30 órás továbbképzés
+                </p>
+              </div>
+
+              <div class="qualification-content">
+                <h3 class="qualification-title">
+                  Korszerű munkavégzési kompetenciák támogatása | 2013
+                </h3>
+                <p class="qualification-description">
+                  DFT-Hungária Kft. | 60 órás továbbképzés
+                </p>
+              </div>
+
+              <div class="qualification-content">
+                <h3 class="qualification-title">
+                  Civil szervezetek felkészítése önkéntesek fogadására | 2013
+                </h3>
+                <p class="qualification-description">
+                  Önkéntes Központ Alapítvány | 17 órás továbbképzés
+                </p>
+              </div>
+
+              <div class="qualification-content">
+                <h3 class="qualification-title">
+                  Pénzügyi-számviteli ügyintéző | 2009-2010
+                </h3>
+                <p class="qualification-description">
+                  BO-DIA Kft. | OKJ-s tanfolyam
+                </p>
+              </div>
+
+              <div class="qualification-content">
+                <h3 class="qualification-title">
+                  “B” kategóriás jogosítvány | 2009
+                </h3>
+              </div>
+            </div>
+          </section>
+
+          <!--=============== SKILLS ===============-->
+          <section class="skills section" id="skills">
+            <h2 class="section-title">INFORMATIKAI KÉSZSÉGEK</h2>
+
+            <div class="skills-content bd-grid">
+              <ul class="skills-data">
+                <li class="skills-name">
+                  <span class="skills-circle"></span> Canva
+                </li>
+
+                <li class="skills-name">
+                  <span class="skills-circle"></span> Adobe Photoshop
+                </li>
+
+                <li class="skills-name">
+                  <span class="skills-circle"></span> Html, CSS, JavaScript
+                </li>
+              </ul>
+
+              <ul class="skills-data">
+                <li class="skills-name">
+                  <span class="skills-circle"></span> Hitfilm Express
+                </li>
+
+                <li class="skills-name">
+                  <span class="skills-circle"></span> Adobe After Effects
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+
+        <div class="resume-right">
+          <!--=============== EXPERIENCE ===============-->
+          <section class="experience section" id="experience">
+            <h2 class="section-title">MUNKATAPASZTALAT</h2>
+
+            <div class="experience-container bd-grid">
+              <div class="experience-content">
+                <div class="experience-time">
+                  <span class="experience-rounder"></span>
+                  <span class="experience-line"></span>
+                </div>
+
+                <div class="experience-data bd-grid">
+                  <h3 class="experience-title">KÖNYVTÁRVEZETŐ</h3>
+                  <span class="experience-company"
+                    >2020. november | <strong>FSZEK Kőbányai Könyvtár</strong> |
+                    Budapest</span
+                  >
+                  <p class="experience-description">
+                    Az intézmény mindennapos működésének megszervezése,
+                    konfliktusos helyzetek asszertív kezelése. Kilenc kolléga
+                    munkájának folyamatos koordinálása. Heti-, havi-, éves
+                    beszámolók írása, adminisztrációs feladatok ellátása.
+                    Rendezvények szervezése, levezetése. Olvasószolgálati
+                    feladatok ellátása. Gyakornoki program koordinálása
+                    (együttműködés az ELTE BTK Könyvtár- és Információtudományi
+                    Intézettel).
+                  </p>
+                </div>
+              </div>
+
+              <div class="experience-content">
+                <div class="experience-time">
+                  <span class="experience-rounder"></span>
+                  <span class="experience-line"></span>
+                </div>
+
+                <div class="experience-data bd-grid">
+                  <h3 class="experience-title">KÖNYVTÁRVEZETŐ</h3>
+                  <span class="experience-company"
+                    >2020. február - 2020. november |
+                    <strong>FSZEK Kassák Könyvtár</strong> | Budapest</span
+                  >
+                  <p class="experience-description">
+                    Az intézmény mindennapos működésének megszervezése,
+                    konfliktusos helyzetek asszertív kezelése. Két kolléga
+                    munkájának folyamatos koordinálása. Heti-, havi beszámolók
+                    írása, adminisztrációs feladatok ellátása. A közösségi média
+                    felületek kezelése, posztok írása. Gyűjteményszervezési
+                    feladatok megszervezése és véghezvitele a kollégákkal
+                    közösen. Olvasószolgálati feladatok ellátása (Corvina
+                    integrált könyvtári rendszer használata).
+                  </p>
+                </div>
+              </div>
+
+              <div class="experience-content">
+                <div class="experience-time">
+                  <span class="experience-rounder"></span>
+                  <span class="experience-line"></span>
+                </div>
+
+                <div class="experience-data bd-grid">
+                  <h3 class="experience-title">SZAKTANÁCSADÓ-KOORDINÁTOR</h3>
+                  <span class="experience-company"
+                    >2017 - 2020 |
+                    <strong>(EFOP-3.3.3-VEKOP/16-2016-00001)</strong> | Budapest
+                  </span>
+                  <p class="experience-description">
+                    Az én könyvtáram elnevezésű országos könyvtárszakmai
+                    projektben mikroszinten hat szaktanácsadó, makroszinten 40
+                    kolléga (megyénként 2-2 fő) munkájának koordinálása.
+                    Részvétel könyvtáros továbbképzések szervezésében, szakmai
+                    anyagok összeállításában, előadások tartásában.
+                    Kapcsolattartás több szakmai intézménnyel, meghívott
+                    előadókkal. A projekt Youtube-csatornájának működtetése, az
+                    ezzel kapcsolatos tartalomgyártó feladatok ellátása.
+                  </p>
+                </div>
+              </div>
+
+              <div class="experience-content">
+                <div class="experience-time">
+                  <span class="experience-rounder"></span>
+                  <span class="experience-line"></span>
+                </div>
+
+                <div class="experience-data bd-grid">
+                  <h3 class="experience-title">OLVASÓSZOLGÁLATI KÖNYVTÁROS</h3>
+                  <span class="experience-company"
+                    >2011 - 2017 |
+                    <strong>Országos Idegennyelvű Könyvtár</strong> | Budapest
+                  </span>
+                  <p class="experience-description">
+                    A dokumentumok használatával és kölcsönzésével kapcsolatos
+                    feladatok (Huntéka integrált könyvtári rendszer használata)
+                    elvégzése. Speciális olvasói csoportok könyvtári ellátásával
+                    kapcsolatos feladatok ellátása. A könyvtár önkéntes-,
+                    illetve iskolai közösségi szolgálatra vonatkozó programjának
+                    kidolgozása és működtetése.
+                  </p>
+                </div>
+              </div>
+
+              <div class="experience-content">
+                <div class="experience-time">
+                  <span class="experience-rounder"></span>
+                  <span class="experience-line"></span>
+                </div>
+
+                <div class="experience-data bd-grid">
+                  <h3 class="experience-title">SZOCIÁLIS ASSZISZTENS</h3>
+                  <span class="experience-company"
+                    >2013 - 2014 | <strong>Léthatáron Alapítvány</strong> |
+                    Budapest</span
+                  >
+                  <p class="experience-description">
+                    Részvétel az intézmény mindennapi működésében, a kollégák
+                    munkájának segítése. Konfliktuskezelés és az ügyfelek
+                    nyugalmának biztosítása.
+                  </p>
+                </div>
+              </div>
+
+              <div class="experience-content">
+                <div class="experience-time">
+                  <span class="experience-rounder"></span>
+                  <!--<span class="experience-line"></span>-->
+                </div>
+
+                <div class="experience-data bd-grid">
+                  <h3 class="experience-title">
+                    KOMMUNIKÁCIÓS MENEDZSER, SZAKKÖNYVTÁROS
+                  </h3>
+                  <span class="experience-company"
+                    >2008 - 2009 | <strong>Gróf Tisza István Kórház</strong> |
+                    Berettyóújfalu</span
+                  >
+                  <p class="experience-description">
+                    A kórház orvosainak, szakalkalmazottainak tudományos
+                    munkához kötődő szakmai hátterének megteremtése,
+                    kiszolgálása.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!--=============== PROFESSIONAL ACTIVITIES ===============-->
+          <section class="certificate section" id="certificates">
+            <h2 class="section-title">SZAKMAI TEVÉKENYSÉG</h2>
+
+            <div class="certificate-container bd-grid">
+              <div class="certificate-content">
+                <h3 class="certificate-title">
+                  Hatékony ügyfél és partnerkapcsolatok a könyvtárban | 2022
+                </h3>
+                <p class="certificate-description">
+                  Fővárosi Szabó Ervin Könyvtár |
+                  <strong>oktató</strong> | belső képzés
+                </p>
+              </div>
+
+              <div class="certificate-content">
+                <h3 class="certificate-title">
+                  Digitális kommunikáció a könyvtári partnerkapcsolatokban |
+                  2020
+                </h3>
+                <p class="certificate-description">
+                  Fővárosi Szabó Ervin Könyvtár |
+                  <strong>tananyagfejlesztő</strong> | e-learning képzés
+                </p>
+              </div>
+
+              <div class="certificate-content">
+                <h3 class="certificate-title">
+                  Felkészülés az iskolai közösségi szolgálat fogadására a
+                  közgyűjteményekben | 2014-2017
+                </h3>
+                <p class="certificate-description">
+                  Országos Széchényi Könyvtár | <strong>oktató</strong> | OKJ-s
+                  tanfolyam
+                </p>
+              </div>
+
+              <div class="certificate-content">
+                <h3 class="certificate-title">
+                  Hajléktalan(ok) a könyvtárban | 2016
+                </h3>
+                <p class="certificate-description">
+                  Fővárosi Szabó Ervin Könyvtár |
+                  <strong>előadó</strong> | érzékenyítő tréning
+                </p>
+              </div>
+
+              <div class="certificate-content">
+                <h3 class="certificate-title">
+                  Az Országos Idegennyelvű Könyvtár önkéntes programja | 2016
+                </h3>
+                <p class="certificate-description">
+                  online elérhető az OIK digitális könyvtárában |
+                  <strong>tanulmány</strong>
+                </p>
+              </div>
+
+              <div class="certificate-content">
+                <h3 class="certificate-title">
+                  Műhelynap az iskolai közösségi szolgálat könyvtári fogadásáról
+                  | 2014
+                </h3>
+                <p class="certificate-description">
+                  Országos Széchényi Könyvtár |
+                  <strong>előadó</strong>
+                </p>
+              </div>
+
+              <div class="certificate-content">
+                <h3 class="certificate-title">
+                  Műhelykonferencia az iskolai közösségi szolgálatról | 2014
+                </h3>
+                <p class="certificate-description">
+                  Magyar Nemzeti Múzeum |
+                  <strong>előadó</strong>
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!--=============== REFERENCES ===============-->
+          <!--<section class="references section" id="references">
+            <h2 class="section-title">References</h2>
+
+            <div class="references-container bd-grid">
+              <div class="references-content bd-grid">
+                <span class="references-subtitle">Sr. Director</span>
+                <h3 class="references-title">Mr. Clay Doe</h3>
+                <ul class="references-contact">
+                  <li>Phone: +36-70-765-4321</li>
+                  <li>E-mail: user@email.com</li>
+                </ul>
+              </div>
+
+              <div class="references-content bd-grid">
+                <span class="references-subtitle">Mag. Developer</span>
+                <h3 class="references-title">Mr. Robbinson Bass</h3>
+                <ul class="references-contact">
+                  <li>Phone: +36-70-765-4321</li>
+                  <li>E-mail: user@email.com</li>
+                </ul>
+              </div>
+            </div>
+          </section> -->
+
+          <!--=============== LANGUAGES ===============-->
+          <section class="languages section">
+            <h2 class="section-title">NYELVISMERET</h2>
+
+            <div class="languages-container">
+              <ul class="languages-content bd-grid">
+                <li class="languages-name">
+                  <span class="languages-circle"></span> Angol | középfokú „C“
+                  típusú általános nyelvvizsga
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <!--=============== VOLUNTEER ===============-->
+          <section class="volunteer section" id="volunteer">
+            <h2 class="section-title">ÖNKÉNTESSÉG</h2>
+
+            <div class="volunteer-container bd-grid">
+              <div class="volunteer-content">
+                <h3 class="volunteer-title">
+                  Wesley János Lelkészképző Főiskola Könyvtára | 2019
+                </h3>
+                <p class="volunteer-description">
+                  Nagyfokú tervszerű selejtezés, struktúrakialakítás,
+                  dokumentumok adatbázisba vétele, feldolgozása | Szikla
+                  integrált könyvtári rendszer használata
+                </p>
+              </div>
+
+              <div class="volunteer-content">
+                <h3 class="volunteer-title">
+                  Belváros – Lipótváros Családsegítő és Gyermekjóléti Szolgálat
+                  | 2012
+                </h3>
+                <p class="volunteer-description">
+                  Angol nyelv korrepetálása
+                </p>
+              </div>
+
+              <div class="volunteer-content">
+                <h3 class="volunteer-title">
+                  Védőháló | HÁLÓ Közösségfejlesztő Katolikus Egyesület | 2012
+                </h3>
+                <p class="volunteer-description">
+                  Rendezvények, filmklubok szervezése
+                </p>
+              </div>
+
+              <div class="volunteer-content">
+                <h3 class="volunteer-title">
+                  Institut Hartheim | Ausztria | 2007
+                </h3>
+                <p class="volunteer-description">
+                  Az intézmény értelmileg akadályozott ügyfeleinek felügyelete
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!--=============== INTERESTS ===============-->
+          <section class="interests section">
+            <h2 class="section-title">HOBBI</h2>
+
+            <div class="interests-container bd-grid">
+              <div class="interests-content">
+                <i class="bx bx-headphone interests-icon"></i>
+                <span class="interests-name">Zenehallgatás</span>
+              </div>
+
+              <div class="interests-content">
+                <i class="bx bx-book interests-icon"></i>
+                <span class="interests-name">Olvasás</span>
+              </div>
+
+              <div class="interests-content">
+                <i class="bx bx-desktop interests-icon"></i>
+                <span class="interests-name">Programozás</span>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <!--=============== SCROLL TOP ===============-->
+    <a href="#" class="scrolltop" id="scroll-top">
+      <i class="bx bx-up-arrow-alt scrolltop-icon"></i>
+    </a>
+
+    <!--=============== HTLM2PDF ===============-->
+    <script src="./assets/js/html2pdf.bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
